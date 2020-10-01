@@ -9,7 +9,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.black]
-skip-string-normalization = false
+skip-string-normalization = true
 
 [tool.isort]
 profile = "black"
