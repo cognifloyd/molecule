@@ -137,7 +137,7 @@ def _output_for_ci(func):
             )
         )
         try:
-            func(config, subcommand)
+            return func(config, subcommand)
         finally:
             print("travis_fold:end:{}.{}".format(config.scenario.name, subcommand))
 
